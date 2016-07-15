@@ -2403,3 +2403,370 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1468400726.996
     'REQUEST_TIME' => 1468400726
 ]
+2016-07-14 01:51:23 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function frontend\controllers\render()' in E:\mygit\yii2_test\advanced\frontend\controllers\TestController.php:199
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#3 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#4 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#6 {main}
+2016-07-14 01:51:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/html'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ\";}'
+    'PHPSESSID' => 've674jrcisn81ohguhcg65m1f6'
+    '_identity' => '1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"qH7D2UofaoqCUdV7_YqxX4UGh57DTawG\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ%22%3B%7D; PHPSESSID=ve674jrcisn81ohguhcg65m1f6; _identity=1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22qH7D2UofaoqCUdV7_YqxX4UGh57DTawG%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\TortoiseSVN\\bin;E:\\;E:\\yii-advanced-app-2.0.8\\advanced;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/mygit/yii2_test/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/html'
+    'REQUEST_URI' => '/index.php?r=test/html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1468486283.828
+    'REQUEST_TIME' => 1468486283
+]
+2016-07-14 01:53:22 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: E:\mygit\yii2_test\advanced\frontend\views\test\html.php' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\mygit\\yii2_t...', Array, Object(frontend\controllers\TestController))
+#1 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('html', Array, Object(frontend\controllers\TestController))
+#2 E:\mygit\yii2_test\advanced\frontend\controllers\TestController.php(199): yii\base\Controller->render('html')
+#3 [internal function]: frontend\controllers\TestController->actionHtml()
+#4 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('html', Array)
+#7 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('test/html', Array)
+#8 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+2016-07-14 01:53:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/html'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ\";}'
+    'PHPSESSID' => 've674jrcisn81ohguhcg65m1f6'
+    '_identity' => '1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"qH7D2UofaoqCUdV7_YqxX4UGh57DTawG\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ%22%3B%7D; PHPSESSID=ve674jrcisn81ohguhcg65m1f6; _identity=1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22qH7D2UofaoqCUdV7_YqxX4UGh57DTawG%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\TortoiseSVN\\bin;E:\\;E:\\yii-advanced-app-2.0.8\\advanced;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/mygit/yii2_test/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51615'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/html'
+    'REQUEST_URI' => '/index.php?r=test/html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1468486401.957
+    'REQUEST_TIME' => 1468486401
+]
+2016-07-14 02:13:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: test/route' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('route', Array)
+#1 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('test/route', Array)
+#2 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2016-07-14 02:13:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/route'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ\";}'
+    'PHPSESSID' => 've674jrcisn81ohguhcg65m1f6'
+    '_identity' => '1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"qH7D2UofaoqCUdV7_YqxX4UGh57DTawG\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ%22%3B%7D; PHPSESSID=ve674jrcisn81ohguhcg65m1f6; _identity=1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22qH7D2UofaoqCUdV7_YqxX4UGh57DTawG%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\TortoiseSVN\\bin;E:\\;E:\\yii-advanced-app-2.0.8\\advanced;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/mygit/yii2_test/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/route'
+    'REQUEST_URI' => '/index.php?r=test/route'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1468487605.233
+    'REQUEST_TIME' => 1468487605
+]
+2016-07-14 02:13:33 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: test/route' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('route', Array)
+#1 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('test/route', Array)
+#2 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2016-07-14 02:13:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/route'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ\";}'
+    'PHPSESSID' => 've674jrcisn81ohguhcg65m1f6'
+    '_identity' => '1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"qH7D2UofaoqCUdV7_YqxX4UGh57DTawG\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ%22%3B%7D; PHPSESSID=ve674jrcisn81ohguhcg65m1f6; _identity=1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22qH7D2UofaoqCUdV7_YqxX4UGh57DTawG%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\TortoiseSVN\\bin;E:\\;E:\\yii-advanced-app-2.0.8\\advanced;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/mygit/yii2_test/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51817'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/route'
+    'REQUEST_URI' => '/index.php?r=test/route'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1468487613.355
+    'REQUEST_TIME' => 1468487613
+]
+2016-07-14 02:13:57 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: test/route' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('route', Array)
+#1 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('test/route', Array)
+#2 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2016-07-14 02:13:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/route'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ\";}'
+    'PHPSESSID' => 've674jrcisn81ohguhcg65m1f6'
+    '_identity' => '1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"qH7D2UofaoqCUdV7_YqxX4UGh57DTawG\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ%22%3B%7D; PHPSESSID=ve674jrcisn81ohguhcg65m1f6; _identity=1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22qH7D2UofaoqCUdV7_YqxX4UGh57DTawG%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\TortoiseSVN\\bin;E:\\;E:\\yii-advanced-app-2.0.8\\advanced;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/mygit/yii2_test/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51825'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/route'
+    'REQUEST_URI' => '/index.php?r=test/route'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1468487637.517
+    'REQUEST_TIME' => 1468487637
+]
+2016-07-14 02:44:10 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii\jui\DatePicker' not found' in E:\mygit\yii2_test\advanced\frontend\views\test\route.php:4
+Stack trace:
+#0 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render()
+#3 E:\mygit\yii2_test\advanced\frontend\controllers\TestController.php(210): yii\base\Controller->render()
+#4 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\TestController->actionRoute()
+#5 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#8 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#9 E:\mygit\yii2_test\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 E:\mygit\yii2_test\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#11 {main}
+2016-07-14 02:44:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'test/route'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ\";}'
+    'PHPSESSID' => 've674jrcisn81ohguhcg65m1f6'
+    '_identity' => '1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"qH7D2UofaoqCUdV7_YqxX4UGh57DTawG\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=ba9637fccd9f4d642b4d7715a1180ef2b4487278bdaaaae64db896c1b9857fa0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22G_WzqL0B1ylvy7QEY66kU9PHf0h0JlZZ%22%3B%7D; PHPSESSID=ve674jrcisn81ohguhcg65m1f6; _identity=1a905b433cc365e9a8c3308654791da422ef12254c9f459e622ec85c4e6e0b8ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22qH7D2UofaoqCUdV7_YqxX4UGh57DTawG%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\TortoiseSVN\\bin;E:\\;E:\\yii-advanced-app-2.0.8\\advanced;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/mygit/yii2_test/advanced/frontend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'E:/mygit/yii2_test/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '52178'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test/route'
+    'REQUEST_URI' => '/index.php?r=test/route'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1468489450.525
+    'REQUEST_TIME' => 1468489450
+]

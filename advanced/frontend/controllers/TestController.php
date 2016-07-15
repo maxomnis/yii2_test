@@ -73,7 +73,23 @@ class TestController extends Controller
                 'variations' => [
                     \Yii::$app->language,
                 ]
-            ]
+            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['logout', 'signup'],
+                'rules' => [
+                    [
+                        'actions' => ['signup'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
         ];
     }
 
@@ -175,5 +191,54 @@ class TestController extends Controller
     }
 
 
+    public function actionArth()
+    {
+        $identity = Yii::$app->user->identity;
+        var_dump($identity);exit;
+    }
+
+    public function actionXss()
+    {
+        echo \yii\helpers\HtmlPurifier::process("<script>alert('Hello!');</script>"); //process会过滤掉所有的html标签,所以这里输出空
+        echo \yii\helpers\Html::encode("<script>alert('Hello!');</script>"); //原样输出内容,js脚本不会被执行
+    }
+
+
+    public function actionCache()
+    {
+
+    }
+
+
+    /*
+     * 使用助手类生成页面
+     */
+    public function actionHtml()
+    {
+       return  $this->render('html');
+    }
+
+    /*
+     * 路由助手类
+     */
+    public function actionRoute()
+    {
+        return $this->render('route');
+    }
+
+    /*
+     * 自定义事件处理，
+     */
+    public function actionEvent()
+    {
+        $test = new \frontend\components\MyEvent;
+        $test->bar();
+    }
+
+
+    public function actionbehavior()
+    {
+        echo $this->
+    }
 
 }

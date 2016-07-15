@@ -63,10 +63,17 @@ return [
             'charset' => 'utf8',
         ],
 
+        /*
+         * 这里的user 表示的用户组件，设置用户组件 yii\web\User ;
+         * 该用户组件yii\web\User的属性identityClass，设置为common\models\User
+         * common\models\User是一个实现了IdentityInterface接口的类
+         */
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
         ],
+
+        
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

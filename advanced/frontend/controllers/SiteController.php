@@ -90,7 +90,6 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            var_dump($this->goBack());exit;
             return $this->goBack();
         } else {
             return $this->render('login', [
