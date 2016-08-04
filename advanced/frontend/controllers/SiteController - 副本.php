@@ -30,10 +30,6 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'only' => ['logout', 'signup'],
                 'rules' => [
-                   [
-                        'actions' => ['login', 'error', 'captcha'],
-                        'allow' => true,
-                    ],
                     [
                         'actions' => ['signup'],
                         'allow' => true,
@@ -246,7 +242,6 @@ class SiteController extends Controller
         $countries = Country::find()->orderBy('name')->all();
         var_dump($countries);
     }
-
 
 
 

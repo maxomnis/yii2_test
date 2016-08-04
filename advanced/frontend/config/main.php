@@ -70,7 +70,10 @@ return [
          */
         'user' => [
             'identityClass' => 'common\models\User',
+            //'class' => 'backend\components\MyUser',  这里的backend\components\MyUser是覆盖了yii\web\User ;
+            'loginUrl' => ['/login/login11'],
             'enableAutoLogin' => true,
+
         ],
 
         

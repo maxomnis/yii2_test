@@ -74,22 +74,6 @@ class TestController extends Controller
                     \Yii::$app->language,
                 ]
             ],
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
         ];
     }
 
@@ -236,9 +220,18 @@ class TestController extends Controller
     }
 
 
-    public function actionbehavior()
+/*    public function actionbehavior()
     {
         echo $this->
     }
+*/
+
+
+    public function actionBody()
+    {
+       return $this->render('body');
+    }
+
+    
 
 }
